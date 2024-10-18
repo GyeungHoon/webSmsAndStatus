@@ -1,0 +1,49 @@
+/* body::before {
+    background-image: url(/assets/images/loginbg.jpg);
+    position: absolute;
+    content: "";
+    top:0px;
+    left:0px;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+} */
+
+.main {width: 1640px; margin: auto;}
+
+
+.main .fillterBtnBox > button{width: 100px; height: 30px; margin: 20px 3px 0 0; border-radius: 10px; background-color: rgb(247, 201, 141); cursor: pointer; }
+.main .fillterBtnBox > button:active{background-color: rgb(177, 145, 104);}
+
+.main .phone_status > div > div{display: flex; justify-content: center;}
+.main .phone_status > div > div > div{width: 350px; margin: 1px;}
+.main > .phone_status > div > div > div span {text-align: center; display: inline-block; font-size: 14px; font-weight: 900; padding: 1px; border: 1px solid black;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main > .phone_status > div > div > div span:nth-child(1){width: 20%;}
+.main > .phone_status > div > div > div span:nth-child(2){width: 40%; border-left:0px;}
+.main > .phone_status > div > div > div span:nth-child(3){width: 35%; border-left:0px;}
+
+.main .phone_status > #rst { counter-reset: var-count;}
+.main .phone_status > #rst > div{position: relative;}
+.main .phone_status > #rst > div:nth-child(odd){margin-top: 30px;}
+.main .phone_status > #rst > div:nth-child(odd):before{
+    counter-increment: var-count;
+    content: counter(var-count) " ";
+    background: rgb(184, 230, 153);
+    color: #0a0a0a;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    top: 20px;
+    left: -50px;
+    position: absolute; 
+}
+
+
+
+

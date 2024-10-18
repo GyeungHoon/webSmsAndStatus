@@ -1,0 +1,33 @@
+/* 제목 */
+.websms{margin-top: 50px; text-align: center; color: #327a81;}
+.websms > h2 {font-size: 50px; font-weight: 900;}
+
+/* 검색박스 */
+.rst01{width: 90%; display: flex; justify-content: right; margin-top: 50px; }
+/* 검색입력란 */
+.rst01 > .search_input{width: 200px; height: 30px; padding: 0 5px; border-style: none; border-top-left-radius: 5px; border-bottom-left-radius: 5px; box-shadow: 3px 3px 5px #888;}
+/* 검색버튼 */
+.rst01 > .search_bt{width: 50px; height: 30px; cursor: pointer; background-color: #5ad0d8; color: #327a81; border-style: none; border-top-right-radius: 5px; border-bottom-right-radius: 5px; box-shadow: 3px 3px 5px #888;}
+.rst01 > .search_bt:active{background-color: #327a81;}
+
+/* 테이블 제목 */
+.rst02 {display: flex;  justify-content: center; margin-top: 5px;}
+.rst02 table {width: 80%; min-width: 1280px; border-radius: 10px; table-layout: fixed; background-color: white; box-shadow: 8px 8px 10px #888; font-size: 16; font-weight: 900; color:#327a81;}
+.rst02 table thead tr th {background-color: #327a81; color: white;}
+.rst02 table thead tr th, td{border: 1px solid black; padding: 2px 5px;}
+.rst02 table thead tr th:nth-child(1){width: 10%; border-top-left-radius:10px;}
+.rst02 table thead tr th:nth-child(2){width: 10%;}
+.rst02 table thead tr th:nth-child(3){width: 10%;}
+.rst02 table thead tr th:nth-child(4){width: 5%;}
+.rst02 table thead tr th:nth-child(5){width: 65%; border-top-right-radius: 10px;}
+
+/* 테이블 내용 */
+.rst02 table tbody tr:hover{background-color: #bbe9d2;}
+.rst02 table tbody tr td:nth-child(1){width: 10%;}
+.rst02 table tbody tr td:nth-child(2){width: 10%;}
+.rst02 table tbody tr td:nth-child(3){width: 10%;}
+.rst02 table tbody tr td:nth-child(4){width: 5%;}
+.rst02 table tbody tr td:nth-child(5){width: 65%;}
+.rst02 table tbody tr:nth-last-child(1) td:nth-child(1){border-bottom-left-radius: 10px;}
+.rst02 table tbody tr:nth-last-child(1) td:nth-child(5){border-bottom-right-radius: 10px;}
+.rst02 table tbody tr td{ overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
