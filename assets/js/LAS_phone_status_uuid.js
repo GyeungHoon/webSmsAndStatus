@@ -140,15 +140,18 @@ function phone_status(rcc) {
 
           
             let xlsxData = []; //배열초기화
+            let funcXLSX = '=IF(COUNTIF(E3:E3, T3) > 0, IF(U3 = "completed", "라스", IF(U3 = "code_mismatch", "code_mismatch", IF(U3 = "ban", "ban", ""))), "")'
             document.getElementById('download').addEventListener('click', function() {
                 // 엑셀에 저장할 데이터 생성
+                xlsxData.push(["S", "T", "U", "V"]);
+                xlsxData.push(["별칭","전화번호","상태","함수"]);
                 for (let i = 0; i < datas.length; i++) {
-                    
                     if(datas[i].number_status != null && datas[i].number_status !== ""){
-
+                        if(i==0){
+                                xlsxData.push([datas[i].phname, datas[i].phone_number, datas[i].number_status,funcXLSX]); // 배열에 추가
+                        }else{
                         xlsxData.push([datas[i].phname, datas[i].phone_number, datas[i].number_status]); // 배열에 추가
-
-                        console.log(datas[i].number_status);
+                        }
                     }
                     };      
                     // 워크북 생성
